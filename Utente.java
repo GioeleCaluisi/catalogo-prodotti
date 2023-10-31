@@ -11,8 +11,9 @@ public class Utente {
 
     }
 
-    public void accedi(){
+    public boolean accedi(){
 
+        boolean ok= false;
         Scanner sc= new Scanner(System.in);
 
         System.out.println("inserisci il nome");
@@ -23,9 +24,13 @@ public class Utente {
 
         if(this.nome.equalsIgnoreCase(n) && this.password.equals(pass)){
             System.out.println("benvenuto");
+
+            ok=true;
         }else{
             System.out.println("credenziali errate");
         }
+
+        return ok;
     }
     
 }

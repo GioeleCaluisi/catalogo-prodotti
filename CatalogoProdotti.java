@@ -32,6 +32,7 @@ switch (scelta) {
     case 1:
         u.accedi();
 
+        if(u.accedi()){
         System.out.println("-------------------------------");
         System.out.println("       1-visualizza prodotti    ");
         System.out.println("       2-esci                    ");
@@ -48,7 +49,7 @@ switch (scelta) {
 
             System.out.println("arrivederci");
         }
-
+    }
         break;
 
     case 2:
@@ -57,9 +58,9 @@ switch (scelta) {
 
 
 
-        
-        
-}
+   
+    }     
+
 
     }
 }
